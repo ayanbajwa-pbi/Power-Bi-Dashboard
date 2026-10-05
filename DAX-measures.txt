@@ -1,0 +1,4 @@
+Total Sales = SUM(Sales[Amount])
+Total Quantity = SUM(Sales[Qty])
+Avg Order Value = DIVIDE([Total Sales], [Total Transactions])
+LTV = CALCULATE([Total Sales], ALLEXCEPT(Customer, Customer[ID]))
